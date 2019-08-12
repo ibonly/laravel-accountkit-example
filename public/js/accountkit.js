@@ -7,7 +7,6 @@ AccountKit_OnInteractive = function() {
 };
 
 function loginCallback(response) {
-  console.log(response);
 
   if (response.status === "PARTIALLY_AUTHENTICATED") {
     document.getElementById('code').value = response.code;
@@ -38,9 +37,5 @@ function smsLogin() {
 // email form submission handler
 function emailLogin() {
   var emailAddress = document.getElementById("email").value;
-  if (emailAddress == '') {
-    alert('Email must be provided');
-    return;
-  }
   AccountKit.login('EMAIL', {emailAddress: emailAddress}, loginCallback);
 }
