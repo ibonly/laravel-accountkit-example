@@ -60,7 +60,7 @@
                     <!-- tab-content -->
                 </div>
         <script type="text/javascript" src="https://sdk.accountkit.com/en_US/sdk.js"></script>
-        <script type="text/javascript" src="{{ load_asset('js/accountKit.js') }}"></script>
+        <script type="text/javascript" src="{{ load_asset('js/accountkit.js') }}"></script>
         <script type="text/javascript" src="{{ load_asset('js/app.js') }}"></script>
         <script type="text/javascript" src="{{ load_asset('js/index.js') }}"></script>
     </body>
