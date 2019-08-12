@@ -13,6 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::post('/otp-login', 'LoginController@otpLogin');
+Route::get('/logout', 'LoginController@logout');

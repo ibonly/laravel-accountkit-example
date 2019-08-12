@@ -38,5 +38,9 @@ function smsLogin() {
 // email form submission handler
 function emailLogin() {
   var emailAddress = document.getElementById("email").value;
+  if (emailAddress == '') {
+    alert('Email must be provided');
+    return;
+  }
   AccountKit.login('EMAIL', {emailAddress: emailAddress}, loginCallback);
 }
